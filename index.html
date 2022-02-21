@@ -11,10 +11,7 @@
   <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
-  <ol>
-    <li><a href="#!html" onclick="fetchpage('html')">HTML</a></li>
-    <li><a href="#!css" onclick="fetchpage('css')">CSS</a></li>
-    <li><a href="#!javascript" onclick="fetchpage('javascript')">javascript</a></li>
+  <ol id="nav">
 
     </ol>
     <article> </article>
@@ -29,7 +26,7 @@
   if(location.hash){
     fetchpage(location.hash.substr(2));
   } else {
-    fetchpage('welcome')
+    fetchpage('welcome');
   }
 
     </script>
