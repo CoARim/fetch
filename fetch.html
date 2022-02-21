@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <body>
@@ -11,11 +10,10 @@
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
         })
-      });
+      })
       */
       //Asynchronous
       fetch('JavaScript').then(function(response){
-        console.log(response.status);
         if(response.status == '404'){
           alert('not found')
         })
